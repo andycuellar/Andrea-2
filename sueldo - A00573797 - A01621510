@@ -1,0 +1,15 @@
+https://replit.com/join/brbhocblul-andreacuellar2
+
+entrada=input("¿Hay otro vendedor? (si/no)")
+while entrada == "si":
+    ventas=int(input("¿Cuál es su salario base?"))
+    if ventas < 3500:
+        comision=ventas*0.07
+    elif ventas >= 3500 and ventas < 7000:
+        comision=ventas*0.10
+    elif ventas >= 7000:
+        comision=ventas*0.15
+    print("La comisión del vendedor es de:",comision)
+    entrada=input("El vendedor realizó ventas (si/no)")
+if entrada == "no":
+  print(":(")
